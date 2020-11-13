@@ -5,10 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
 
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>淘宝轮播图的做法</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            .tb_promo {
+                position: relative;
+                width: 520px;
+                height: 280px;
+                background-color: aqua;
+                margin: 100px auto;
+            }
+            
+            .tb_promo img {
+                width: 520px;
+                height: 280px;
+            }
+            
+            .prev {
+                left: 0;
+                border-radius: 0 15px 15px 0;
+            }
+            
+            .next {
+                right: 0;
+                border-radius: 15px 0 0 15px;
+            }
+            
+            .prev,
+            .next {
+                position: absolute;
+                top: 50%;
+                margin-top: -15px;
+                /* 绝对定位可以直接加宽高 */
+                width: 20px;
+                height: 30px;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                line-height: 30px;
+                text-align: center;
+            }
+        </style>
+    </head>
 
-</body>
+    <body>
+        <div class="tb_promo">
+            <img src="images/tb.jpg" alt="tb_promo">
+            <a href="#" class="prev">
+                &lt;</a>
+            <a href="#" class="next">&gt;</a>
+        </div>
+    </body>
 
 </html>

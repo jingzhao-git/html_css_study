@@ -20,6 +20,10 @@
                 text-decoration: none;
             }
             
+            li {
+                list-style-type: none;
+            }
+            
             .tb_promo {
                 position: relative;
                 width: 520px;
@@ -56,15 +60,45 @@
                 line-height: 30px;
                 text-align: center;
             }
+            
+            .promo_nav {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                margin-left: -36px;
+                width: 70px;
+                height: 13px;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 7px;
+            }
+            
+            .promo_nav li {
+                float: left;
+                margin: 3px;
+                width: 8px;
+                height: 8px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+            
+            .promo_nav .selected {
+                background-color: orange;
+            }
         </style>
     </head>
 
     <body>
         <div class="tb_promo">
             <img src="images/tb.jpg" alt="tb_promo">
-            <a href="#" class="prev">
-                &lt;</a>
+            <a href="#" class="prev">&lt;</a>
             <a href="#" class="next">&gt;</a>
+            <ul class="promo_nav">
+                <li class="selected"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     </body>
 

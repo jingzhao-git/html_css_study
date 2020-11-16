@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+        }
+        
+        .prev,
+        .next {
+            width: 72px;
+        }
+        
+        div a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .current,
+        .elips {
+            background-color: #fff;
+            border: 0;
+        }
+        
+        div input {
+            width: 45px;
+            height: 36px;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+        
+        div button {
+            width: 60px;
+            height: 36px;
+            border: 1px solid #ccc;
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#" class="prev">&lt&ltprev</a>
+
+        <a href="#">1</a>
+        <a href="#" class="current">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#" class="elips">...</a>
+        <a href="#" class="next">&gt&gtnext</a> 到第
+        <input type="text"> 页
+        <button>确定</button>
+    </div>
+</body>
+
+</html>
